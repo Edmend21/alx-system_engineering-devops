@@ -1,2 +1,2 @@
 #!/bin/bash
-count=$(IFS=':'; set -f; set -- $PATH; echo $#)
+echo $PATH | ':' '\n' |wc -l
